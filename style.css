@@ -1,0 +1,90 @@
+/* Estilo geral*/
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal */
+.weather-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Caixa de busca */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#city-input {
+    flex-grow: 1; /* Faz o input ocupar o espaço disponível */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#search-btn {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+/*resultados */
+#weather-result {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+#weather-result h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+#weather-result .temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+#weather-result .description {
+    font-size: 20px;
+    color: #555;
+    text-transform: capitalize; /* Primeira letra maiúscula */
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
